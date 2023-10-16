@@ -1,0 +1,209 @@
+html { font-size: 0.7rem; }
+
+body{
+    background-color: #111;
+    margin:0;
+    padding:0;
+    width:100vw;
+    overflow-x:hidden;
+}
+
+#cover{
+    width:100vw;
+    height:100vh;
+    background-image: url("img/cover.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#content-container{
+    width:960px;
+    margin:auto;
+}
+
+#intro{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Fira Sans;
+    font-size: 3.157rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 5.2rem;     
+    padding: 140px 0;
+}
+
+.section{    
+    padding: 140px 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.sec-title{
+    color: #fff;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Martian Mono;
+    font-size: 2.369rem;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 75%;
+    line-height: 100%;
+    text-transform: uppercase;
+    width:300px;
+    margin:0;
+    position:sticky;
+    top:30px;
+}
+
+.sec-content{
+    width:auto;
+    width:660px;
+}
+
+.sec-content p, ol{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Fira Sans;
+    font-size: 1.777rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%;
+    margin-top:0;
+    margin-bottom:1.777rem;
+}
+
+.sec-content li{    
+    padding-left:10px;
+    margin-bottom:1.777rem;
+}
+
+.sec-content span{
+    color: #111;
+    font-style: italic;
+    padding-right: 5px;
+}
+
+.sec-content #hg1{
+    background-color: #E5F1FF;
+}
+
+.sec-content #hg2{
+    background-color: #DEFFD5;
+}
+
+.sec-content #hg3{
+    background-color: #FFF1D2;
+}
+
+.img-container{
+    display:flex;
+    justify-content: space-between;
+    margin:35px 0 20px 0;
+}
+
+#img-01 img{
+    width:48.5%;
+}
+
+.img-container video{
+    border-radius:10px;
+    width:100%;
+}
+
+.pdf-container{
+    width:28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pdf-container img{
+    width:100%;
+}
+
+.button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-bottom:40px;
+    padding: 8px 15px;
+    border-radius:30px;
+    color: #fff;    
+    font-family: Martian Mono;
+    font-size: 1.333rem;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 75%;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: #111;
+}
+
+footer{
+    background-color: #222;
+    margin:0;
+    padding:0 100px;
+}
+
+#colophon{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Martian Mono;
+    font-size: 1.333rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 225.035%;
+    margin:0;
+}
+
+.role{
+
+}
+
+.name{
+    
+}
+
+#foot-1{
+    display:flex;
+}
+
+.sec-content > p.caption{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Martian Mono;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 180%;
+    margin-bottom:35px;
+}
+
+#report-protocols-container{
+    margin-bottom:140px;
+    margin-top:0;
+}
+
+a{
+    color: #fff;
+}
+
+i{
+    font-style: italic;
+    font-weight: 500;
+}
+
+b{
+    font-weight: 700;
+}
