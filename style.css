@@ -1,6 +1,9 @@
 /*_________________________________________________ General*/
 
-html { font-size: 0.7rem; }
+html {
+    font-size: 0.7rem;
+    scroll-behavior: smooth;
+} 
 
 body{
     background-color: #111;
@@ -45,6 +48,40 @@ b{
   
 ::-webkit-scrollbar-thumb:hover {
     background: #fff; 
+}
+
+/*_________________________________________________ Navbar*/
+
+#navbar{
+    position:fixed;
+    background-color: #111;    
+    border-bottom: 1px solid #fff;
+    z-index:3;
+    width:100%;
+}
+
+#navbar-inside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin:15px 70px;
+}
+
+#navbar img{
+    height: 20px;
+}
+
+#navbar a{
+    color: #fff;
+    font-family: Martian Mono;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 75%;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 /*_________________________________________________ Cover*/
@@ -117,7 +154,7 @@ b{
 
 /*_________________________________________________ Content > Sections*/
 
-.section{
+.section, .subsection{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -248,12 +285,17 @@ b{
 
 /*_________________________________________________ Content > Sections > Project*/
 
+#Project{
+    flex-wrap: wrap;
+}
+
 #report-protocols-container{
     margin-bottom:140px;
     margin-top:0;
 }
 
 #call-to-action{
+    width:100%;
     text-align: center;
     margin-bottom: 80px;
     font-size: 1.777rem;
@@ -263,6 +305,7 @@ b{
     font-weight: 300;
     font-stretch: 75%;
     text-transform: uppercase;
+    padding-top:140px;
 }
 
 #call-to-action span{
@@ -350,7 +393,8 @@ b{
 /*_________________________________________________ Footer*/
 
 footer{
-    background-color: #1a1a1a;
+    background-color: #111;
+    border-top: 1px solid #fff;
     margin:0;
     padding-top:20px;
 }
