@@ -53,7 +53,6 @@ b{
 /*_________________________________________________ Navbar*/
 
 #navbar{
-    display:none;
     position:fixed;
     background-color: #111;    
     border-bottom: 1px solid #fff;
@@ -67,7 +66,6 @@ b{
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    margin:15px 70px;
 }
 
 #navbar img{
@@ -78,6 +76,7 @@ b{
     color: #fff;
     font-family: Martian Mono;
     font-style: normal;
+    font-size: 1rem;
     font-weight: 300;
     font-stretch: 75%;
     line-height: 100%;
@@ -85,14 +84,51 @@ b{
     text-decoration: none;
 }
 
-#navbar a:hover{
-    text-decoration: underline;
-}
-
 a#navbar-cta{
     background-color: #fff;
     color:#111;
-    padding:5px;
+    padding:5px 15px;
+    border-radius: 20px;
+}
+
+@media screen {
+    
+    #navbar-inside{
+        margin:15px 20px;
+    }
+
+    .menu-item{
+        display:none;
+    }
+
+    #navbar-cta{
+        display:block;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+    #navbar-inside{
+        margin:15px 32px;
+    }
+
+    .menu-item{
+        display:block;
+    }    
+    
+}
+
+@media screen and (min-width: 1025px) {
+    
+    #navbar-inside{
+        margin:15px 70px;
+    }
+
+    #navbar a:hover{
+        text-decoration: underline;
+    }      
+    
 }
 
 /*_________________________________________________ Cover*/
@@ -438,7 +474,7 @@ a#navbar-cta{
     #call-to-action{
         font-size: 1.563rem;
         margin-bottom: 0;
-        padding-top:50px;
+        padding-top:70px;
     }
 
     .pdf-container{
