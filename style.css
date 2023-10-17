@@ -148,6 +148,7 @@ a#navbar-cta{
         padding: 70px 0;
         font-size: 2.441rem;
         line-height: 3.8rem;
+        margin-bottom: 1.563rem;
     }
     
 }
@@ -158,6 +159,7 @@ a#navbar-cta{
         padding: 160px 0;
         font-size: 3.157rem;
         line-height: 5.2rem;
+        margin-bottom: 0;
     }
     
 }
@@ -188,7 +190,6 @@ a#navbar-cta{
 .img-container{
     display:flex;
     justify-content: space-between;
-    margin:35px 0 20px 0;
 }
 
 .sec-content p, ol{
@@ -206,6 +207,10 @@ a#navbar-cta{
         flex-wrap: wrap;
     }
 
+    .subsection{
+        flex-wrap: wrap;
+    }
+
     .sec-title{
         font-size: 1.953rem;
         width:100%;
@@ -214,6 +219,12 @@ a#navbar-cta{
 
     .sec-content{
         width:100%;
+    }
+
+    .img-container{
+        margin:20px 0 20px 0;
+        flex-direction: column;
+        align-items: center;
     }
 
     .sec-content p, ol{
@@ -231,16 +242,25 @@ a#navbar-cta{
         flex-wrap: nowrap;
     }
 
+    .subsection{
+        flex-wrap: nowrap;
+    }
+
     .sec-title{
         font-size: 2.369rem;
         width:300px;
         margin:0;
         position:sticky;
-        top:30px;
+        top:80px;
     }
 
     .sec-content{
         width:660px;
+    }
+
+    .img-container{
+        margin:35px 0 20px 0;
+        flex-direction: row;
     }
 
     .sec-content p, ol{
@@ -252,10 +272,6 @@ a#navbar-cta{
 }
 
 /*_________________________________________________ Content > Sections > Background*/
-
-#img-01 img{
-    width:48.5%;
-}
 
 .img-container video{
     border-radius:10px;
@@ -272,11 +288,36 @@ a#navbar-cta{
     margin-bottom:35px;
 }
 
+@media screen {
+
+    #img-01{
+        margin-bottom: 0;
+    }
+
+    #img-01 img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    #img-01{
+        margin-bottom: 20px;
+    }
+
+    #img-01 img{
+        width: 48.5%;
+        margin-bottom: 0;
+    }
+    
+}
+
 /*_________________________________________________ Content > Sections > Case studies*/
 
 .sec-content li{    
     padding-left:10px;
-    margin-bottom:1.777rem;
 }
 
 .sec-content span{
@@ -297,6 +338,22 @@ a#navbar-cta{
     background-color: #FFF1D2;
 }
 
+@media screen {
+
+    .sec-content li{
+        margin-bottom:1.563rem;;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .sec-content li{
+        margin-bottom:1.777rem;;
+    }    
+    
+}
+
 /*_________________________________________________ Content > Sections > Project*/
 
 #Project{
@@ -304,22 +361,18 @@ a#navbar-cta{
 }
 
 #report-protocols-container{
-    margin-bottom:140px;
-    margin-top:0;
+    margin: 0;
 }
 
 #call-to-action{
     width:100%;
     text-align: center;
-    margin-bottom: 80px;
-    font-size: 1.777rem;
     color: #111;
     font-family: Martian Mono;
     font-style: normal;
     font-weight: 300;
     font-stretch: 75%;
     text-transform: uppercase;
-    padding-top:140px;
 }
 
 #call-to-action span{
@@ -328,7 +381,6 @@ a#navbar-cta{
 }
 
 .pdf-container{
-    width:28%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -343,12 +395,8 @@ a#navbar-cta{
 .button{
     background-color: transparent;
     border: 2px solid #fff;
-    margin-bottom:40px;
-    padding: 8px 15px;
-    border-radius:30px;
     color: #fff;    
     font-family: Martian Mono;
-    font-size: 1.333rem;
     font-style: normal;
     font-weight: 300;
     font-stretch: 75%;
@@ -356,13 +404,65 @@ a#navbar-cta{
     text-transform: uppercase;
 }
 
-.pdf-container:hover img{
-    transform:scale(1.05);
+@media screen {
+
+    #report-protocols-container{
+        margin-bottom: 1.563rem;
+    }
+
+    #call-to-action{
+        font-size: 1.563rem;
+        margin-bottom: 0;
+        padding-top:50px;
+    }
+
+    .pdf-container{
+        width:50%;
+    }
+
+    .button{
+        margin-top: 50px;
+        margin-bottom:20px;
+        padding: 8px 15px;
+        border-radius:30px;
+        font-size: 1.25rem;
+    }
+    
 }
 
-.pdf-container:hover .button{
-    background-color: #fff;
-    color: #111;
+@media screen and (min-width: 768px) {
+
+    #report-protocols-container{
+        margin-bottom: 1.777rem;
+    }
+
+    #call-to-action{
+        font-size: 1.777rem;
+        margin-bottom: 80px;
+        padding-top:100px;
+    }
+
+    .pdf-container{
+        width:28%;
+    }
+
+    .button{
+        margin-top: 0;
+        margin-bottom:40px;
+        padding: 8px 15px;
+        border-radius:30px;
+        font-size: 1.333rem;
+    }
+
+    .pdf-container:hover img{
+        transform:scale(1.05);
+    }
+    
+    .pdf-container:hover .button{
+        background-color: #fff;
+        color: #111;
+    }
+    
 }
 
 /*_________________________________________________ Content > Sections > Gallery*/
@@ -383,25 +483,51 @@ a#navbar-cta{
 
 .img-grid {
     display: grid;
-    grid-template-areas:
-      'img1 img2 img2'
-      'img3 img2 img2'
-      'img4 img4 img4'
-      'img4 img4 img4'
-      'img5 img6 img6'
-      'img7 img6 img6'
-      'img7 img8 img9'
-      'img10 img10 img10'      
-      'img10 img10 img10'      
-      'img11 img12 img13';
     gap: 10px;
-    padding: 10px;
 }
 
 .img-grid div{
     background-size: cover;
     background-position: center;
     padding: 50%;
+}
+
+@media screen {
+
+    .img-grid {
+        grid-template-areas:
+          'img1 img3'
+          'img2 img2'
+          'img2 img2'
+          'img5 img4'
+          'img8 img4'
+          'img6 img6'
+          'img6 img6'
+          'img7 img11'      
+          'img7 img9'      
+          'img10 img10'      
+          'img10 img10'                
+          'img12 img13';
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .img-grid {
+        grid-template-areas:
+          'img1 img2 img2'
+          'img3 img2 img2'
+          'img4 img4 img4'
+          'img4 img4 img4'
+          'img5 img6 img6'
+          'img7 img6 img6'
+          'img7 img8 img9'
+          'img10 img10 img10'      
+          'img10 img10 img10'      
+          'img11 img12 img13';
+    } 
+    
 }
 
 /*_________________________________________________ Footer*/
