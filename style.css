@@ -333,7 +333,7 @@ a#navbar-cta{
 
 /*_________________________________________________ Content > Sections > Background*/
 
-.img-container video{
+.img-container #gif{
     border-radius:10px;
     width:100%;
 }
