@@ -23,8 +23,6 @@ body{
 
 #intro{
     color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
     font-family: Fira Sans;
     font-size: 3.157rem;
     font-style: normal;
@@ -44,8 +42,6 @@ body{
 
 .sec-title{
     color: #fff;
-    leading-trim: both;
-    text-edge: cap;
     font-family: Martian Mono;
     font-size: 2.369rem;
     font-style: normal;
@@ -66,8 +62,6 @@ body{
 
 .sec-content p, ol{
     color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
     font-family: Fira Sans;
     font-size: 1.777rem;
     font-style: normal;
@@ -186,15 +180,13 @@ body{
   }
 
 footer{
-    background-color: #222;
+    background-color: #1a1a1a;
     margin:0;
     padding-top:20px;
 }
 
 #colophon{
     color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
     font-family: Martian Mono;
     font-size: 1.333rem;
     font-style: normal;
@@ -206,8 +198,6 @@ footer{
 .role{
     margin:0;
     color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
     font-family: Fira Sans;
     font-size: 1rem;
     font-style: italic;
@@ -218,8 +208,6 @@ footer{
 .name{
     margin:0;
     color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
     font-family: Fira Sans;
     font-size: 1.333rem;
     font-style: normal;
@@ -245,8 +233,6 @@ footer{
 
 #copyright, #mail{
     color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
     font-family: Fira Sans;
     font-size: 1rem;
     font-style: italic;
@@ -256,8 +242,6 @@ footer{
 
 .sec-content > p.caption{
     color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
     font-family: Martian Mono;
     font-size: 1rem;
     font-style: normal;
