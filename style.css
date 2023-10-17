@@ -10,6 +10,10 @@ body{
     overflow-x:hidden;
 }
 
+p, h2{
+    margin:0;
+}
+
 a{
     color: #fff;
 }
@@ -55,9 +59,31 @@ b{
 
 /*_________________________________________________ Content*/
 
-#content-container{
-    width:960px;
-    margin:auto;
+@media screen {
+
+    #content-container{
+        width:auto;
+        margin:0 20px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    #content-container{
+        width:auto;
+        margin:0 32px;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) {
+
+    #content-container{
+        width:960px;
+        margin:auto;
+    }
+    
 }
 
 /*_________________________________________________ Content > Introduction*/
@@ -65,42 +91,47 @@ b{
 #intro{
     color: #FFF;
     font-family: Fira Sans;
-    font-size: 3.157rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 5.2rem;     
-    padding: 140px 0;
+}
+
+@media screen {
+
+    #intro{  
+        padding: 70px 0;
+        font-size: 2.441rem;
+        line-height: 3.8rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    #intro{  
+        padding: 160px 0;
+        font-size: 3.157rem;
+        line-height: 5.2rem;
+    }
+    
 }
 
 /*_________________________________________________ Content > Sections*/
 
-.section{    
-    padding: 140px 0;
+.section{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
     align-items: flex-start;
 }
 
 .sec-title{
     color: #fff;
     font-family: Martian Mono;
-    font-size: 2.369rem;
     font-style: normal;
     font-weight: 300;
     font-stretch: 75%;
     line-height: 100%;
     text-transform: uppercase;
-    width:300px;
-    margin:0;
-    position:sticky;
-    top:30px;
-}
-
-.sec-content{
-    width:auto;
-    width:660px;
 }
 
 .img-container{
@@ -112,12 +143,61 @@ b{
 .sec-content p, ol{
     color: #FFF;
     font-family: Fira Sans;
-    font-size: 1.777rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 190%;
     margin-top:0;
-    margin-bottom:1.777rem;
+}
+
+@media screen {
+
+    .section{    
+        padding: 70px 0;
+        flex-wrap: wrap;
+    }
+
+    .sec-title{
+        font-size: 1.953rem;
+        width:100%;
+        margin-bottom:35px;
+    }
+
+    .sec-content{
+        width:100%;
+    }
+
+    .sec-content p, ol{
+        font-size: 1.563rem;
+        line-height: 190%;
+        margin-bottom:1.563rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .section{    
+        padding: 140px 0;
+        flex-wrap: nowrap;
+    }
+
+    .sec-title{
+        font-size: 2.369rem;
+        width:300px;
+        margin:0;
+        position:sticky;
+        top:30px;
+    }
+
+    .sec-content{
+        width:660px;
+    }
+
+    .sec-content p, ol{
+        font-size: 1.777rem;
+        line-height: 190%;
+        margin-bottom:1.777rem;
+    }
+    
 }
 
 /*_________________________________________________ Content > Sections > Background*/
@@ -173,15 +253,34 @@ b{
     margin-top:0;
 }
 
+#call-to-action{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 1.777rem;
+    color: #111;
+    font-family: Martian Mono;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 75%;
+    text-transform: uppercase;
+}
+
+#call-to-action span{
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
 .pdf-container{
     width:28%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
 }
 
 .pdf-container img{
     width:100%;
+    transition-duration: 0.3s;
 }
 
 .button{
@@ -198,10 +297,13 @@ b{
     font-stretch: 75%;
     line-height: 100%;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
-.button:hover{
+.pdf-container:hover img{
+    transform:scale(1.05);
+}
+
+.pdf-container:hover .button{
     background-color: #fff;
     color: #111;
 }
